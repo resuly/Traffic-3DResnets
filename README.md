@@ -4,23 +4,20 @@
 
 ### Intro
 
-This is the PyTorch code for the following papers:
+This is an open-source (MIT) [Pytorch](https://github.com/pytorch/pytorch) based code repository (3DResNet) for the following papers:
 
 "Wang, B., Vu, H.L., Kim, I. and Cai, C., 2021. Short-term traffic flow prediction in bike-sharing networks. *Journal of Intelligent Transportation Systems*, pp.1-18."
 
-To perform 3D convolution, the input data should contain 4 dimensions. In our case, they are (1) historical timesteps, (2) traffic flow types (in and out), (3) grid width, and (4) grid height.
-
 ![3DConvNets](imgs/3DConvNets.png)
 
-<p style="text-align: center;">
-    The structure of 3DResNet model.
-</p>
+It is designed to perform 3D convolution to capture more complex spatiotemporal features in traffic prediciton problems. A bike-sharing dataset is used for demostration, and the input data in this case should contain 4 dimensions: (1) historical timesteps, (2) traffic flow types (in and out), (3) grid width, and (4) grid height.
+
 
 ### Data
 
 The open-source bike-sharing dataset is from "Zhang, J., Zheng, Y. and Qi, D., 2017, February. Deep spatio-temporal residual networks for citywide crowd flows prediction. In *Proceedings of the AAAI Conference on Artificial Intelligence* (Vol. 31, No. 1)."
 
-The original link is  <a href="https://github.com/lucktroy/DeepST/tree/master/data/BikeNYC">https://github.com/lucktroy/DeepST/tree/master/data/BikeNYC (removed by the author now)</a>. The corresponding file can be found at `main/data/NYC14_M16x8_T60_NewEnd.h5` in this repository. 
+The original link is  <a href="https://github.com/lucktroy/DeepST/tree/master/data/BikeNYC">https://github.com/lucktroy/DeepST/tree/master/data/BikeNYC</a> (removed by the author now). The copy can be found at `main/data/NYC14_M16x8_T60_NewEnd.h5` in this repository. 
 
 
 
@@ -55,7 +52,7 @@ The codes are located in `main` folder. Available options:
 
 
 
-(1) Train a single model (available name ResNet3D, STResnet, SRCNs, and ResNet34):
+(1) Train a single model (available names: ResNet3D, STResnet, SRCNs, and ResNet34):
 
 ```
 python train.py --model ResNet3D
@@ -84,17 +81,17 @@ An interactive forecasting result can be found in <a href="http://resuly.me/proj
 
 
 ### Citation
-
+```
 @article{
-
-​	doi:10.1080/15472450.2021.1904921,
-​	author = {Bo Wang and Hai L. Vu and Inhi Kim and Chen Cai},
-​	title = {Short-term traffic flow prediction in bike-sharing networks},
-​	journal = {Journal of Intelligent Transportation Systems},
-​	volume = {0},
-​	number = {0},
-​	pages = {1-18},
-​	year  = {2021},
-​	publisher = {Taylor & Francis},
-​	doi = {10.1080/15472450.2021.1904921}
+    doi:10.1080/15472450.2021.1904921,
+    author = {Bo Wang and Hai L. Vu and Inhi Kim and Chen Cai},
+    title = {Short-term traffic flow prediction in bike-sharing networks},
+    journal = {Journal of Intelligent Transportation Systems},
+    volume = {0},
+    number = {0},
+    pages = {1-18},
+    year  = {2021},
+    publisher = {Taylor & Francis},
+    doi = {10.1080/15472450.2021.1904921}
 }
+```
