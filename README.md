@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This is an open-source (MIT) [Pytorch](https://github.com/pytorch/pytorch) based code repository (3DResNet) for the following papers:
+This is an open-source (MIT) [Pytorch](https://github.com/pytorch/pytorch) based code repository (3DResNet) for the following paper:
 
 "Wang, B., Vu, H.L., Kim, I. and Cai, C., 2021. Short-term traffic flow prediction in bike-sharing networks. *Journal of Intelligent Transportation Systems*, pp.1-18."
 
