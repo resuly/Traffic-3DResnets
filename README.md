@@ -2,7 +2,7 @@
 
 
 
-### Intro
+### Introduction
 
 This is an open-source (MIT) [Pytorch](https://github.com/pytorch/pytorch) based code repository (3DResNet) for the following papers:
 
@@ -10,7 +10,7 @@ This is an open-source (MIT) [Pytorch](https://github.com/pytorch/pytorch) based
 
 ![3DConvNets](imgs/3DConvNets.png)
 
-It is designed to perform 3D convolution to capture more complex spatiotemporal features in traffic prediciton problems. A bike-sharing dataset is used for demostration, and the input data in this case should contain 4 dimensions: (1) historical timesteps, (2) traffic flow types (in and out), (3) grid width, and (4) grid height.
+It is designed to perform 3D convolution to capture more complex spatiotemporal features in traffic prediction problems. A bike-sharing dataset is used for the demonstration, and the input data, in this case, should contain 4 dimensions: (1) historical timesteps, (2) traffic flow types (in and out), (3) grid width, and (4) grid height.
 
 
 ### Data
@@ -27,7 +27,7 @@ In this repository, we have implemented the following NN-based models:
 
 - **3DConvNets** (this project) proposed in "Short-term traffic flow prediction in bike-sharing networks".
 - **SRCNs** from "Yu, H., Wu, Z., Wang, S., Wang, Y. and Ma, X., 2017. Spatiotemporal recurrent convolutional networks for traffic prediction in transportation networks. *Sensors*, *17*(7), p.1501."
-- **DeepST** from "Zhang, J., Zheng, Y. and Qi, D., 2017, February. Deep spatio-temporal residual networks for citywide crowd flows prediction. In *Proceedings of the AAAI Conference on Artificial Intelligence* (Vol. 31, No. 1)."
+- **ST-ResNet** from "Zhang, J., Zheng, Y. and Qi, D., 2017, February. Deep spatio-temporal residual networks for citywide crowd flows prediction. In *Proceedings of the AAAI Conference on Artificial Intelligence* (Vol. 31, No. 1)."
 - **ResNet34** from "He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In *Proceedings of the IEEE conference on computer vision and pattern recognition* (pp. 770-778)."
 
 Their details can be found in `main/model/net.py` and `main/model/deepst.py`. Please feel free to add your own models or other baseline models into `net.py` for comparison.
@@ -50,8 +50,6 @@ The following Python packages are required:
 
 The codes are located in `main` folder. Available options:
 
-
-
 (1) Train a single model (available names: ResNet3D, STResnet, SRCNs, and ResNet34):
 
 ```
@@ -71,6 +69,10 @@ python synthesize_results.py
 ```
 
 
+
+An example on Windows 10 with PowerShell:
+
+![train_action](imgs/train_action.gif)
 
 ### Visualization
 
