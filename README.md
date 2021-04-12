@@ -76,7 +76,7 @@ An example on Windows 10 with PowerShell:
 
 ### Visualization
 
-An interactive forecasting result can be found in <a href="http://resuly.me/projects/3DResNet/index.html">http://resuly.me/projects/3DResNet/index.html</a>
+An interactive forecasting result can be found in <a href="http://resuly.me/projects/3DResNet/flow.html">http://resuly.me/projects/3DResNet/flow.html</a>
 
 ![nyc_bike_flow](imgs/nyc_bike_flow.gif)
 
